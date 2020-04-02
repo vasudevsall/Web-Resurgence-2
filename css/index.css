@@ -13,6 +13,10 @@
 
 /* class starts */
 
+.invisible {
+  display: none;
+}
+
 .homeBody {
   background-color: #2A3137!important;
   overflow: hidden;

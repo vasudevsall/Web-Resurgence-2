@@ -16,7 +16,6 @@ $('.navTrigger').click(function () {
 });
 
 //The loading of page
-$('#main-content').hide();
 document.addEventListener("DOMContentLoaded", function(event){
   document.getElementById("loadingVideo").addEventListener('ended',function() {
     // console.log("Hi");
@@ -26,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 function afterLoad() {
   $("#changing-content").load("/content/home.html #home-changing-content");
+  $('#main-content').removeClass('invisible').hide();
   $('#loader').fadeOut(1000, function(){
     $('#main-content').fadeIn(1000);
   });
