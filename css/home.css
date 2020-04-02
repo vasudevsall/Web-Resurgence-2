@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.home-logo {
+  /* display: flex; */
+  /* position: fixed; */
+  width: 100%;
+  height: calc(100% - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resurgence-name {
+  color: white;
+  position: fixed;
+  height: 150px;
+	width: 100vw;
+	font-family: 'Barlow Condensed';
+	font-size: 2rem;
+	letter-spacing: 50px;
+  text-align: center;
+}
+
+.outer-circle {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+  animation: rotate 1.5s linear infinite;
+}
+
+.outer-circle span {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  border-radius: 50%;
+}
+
+span:nth-child(1) {
+  filter: blur(5px);
+}
+
+span:nth-child(2) {
+  filter: blur(10px);
+}
+
+span:nth-child(3) {
+  filter: blur(25px);
+}
+
+span:nth-child(4) {
+  filter: blur(150px);
+}
+
+.inner-circle {
+  height: 280px;
+  width: 280px;
+  position: absolute;
+  background: black;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 9;
+}
+
+.innerLogo {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+@keyframes rotate {
+  0% {
+    /* filter: invert(0); */
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    /* filter: invert(1); */
+    filter: hue-rotate(360deg);
+  }
+}

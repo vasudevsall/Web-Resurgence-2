@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/navBar.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/home.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <title>Resurgence 2020</title>
     <link rel="icon" type="image/x-icon" href="images/icon.png">
   </head>
-  <body>
+  <body class="homeBody" id="theBody">
     <div id="loader" class="loadingVideoDiv">
       <video autoplay muted src="video/Loader.mp4" type"video/mp4" class="video" id="loadingVideo"></video>
     </div>
@@ -37,10 +37,11 @@
         </div>
       </nav>
     <!--This div loads all content using jquery and ajax-->
-    <div class="centerContent" id="changingContent">
+    <div class="center-content" id="changing-content">
     </div>
   </div>
     <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/home.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
   </body>
 </html>

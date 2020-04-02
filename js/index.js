@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 });
 
 function afterLoad() {
+  $("#changing-content").load("/content/home.html #home-changing-content");
   $('#loader').fadeOut(1000, function(){
     $('#main-content').fadeIn(1000);
   });
