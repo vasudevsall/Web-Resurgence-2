@@ -14,7 +14,11 @@
     <link rel="icon" type="image/x-icon" href="images/icon.png">
   </head>
   <body>
-    <nav class="nav1">
+    <div id="loader" class="loadingVideoDiv">
+      <video autoplay muted src="video/Loader.mp4" type"video/mp4" class="video" id="loadingVideo"></video>
+    </div>
+    <div id="main-content">
+      <nav class="nav1">
         <div class="container1">
             <div class="logo"><img src="images/logo.png" class="navlogo"></div>
             <div id="mainListDiv" class="main_list">
@@ -31,20 +35,11 @@
                 <i></i><i></i><i></i>
             </span>
         </div>
-    </nav>
-
-    
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
+      </nav>
+    <!--This div loads all content using jquery and ajax-->
+    <div class="centerContent" id="changingContent">
+    </div>
+  </div>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
   </body>
