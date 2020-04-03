@@ -130,10 +130,9 @@ function transitionFunction() {
       }
       //Sliding in functions
       $("#changing-content").css("left","-100vw");
-      $("#changing-content").load(pages[pageHit-1]);
-      setTimeout(function(){
+      $("#changing-content").load(pages[pageHit-1], function(){
         slideInLeft("#changing-content");
-      }, 200);
+      });
       transitionEnd();
     }, 550);
   }
@@ -161,10 +160,9 @@ function transitionFunction() {
       //Sliding in functions
       $("#changing-content").css("left","100vw");
       $("#changing-content").show();
-      $("#changing-content").load(pages[pageHit-1]);
-      setTimeout(function(){
+      $("#changing-content").load(pages[pageHit-1], function(){
         slideInRight("#changing-content");
-      }, 200);
+      });
       transitionEnd();
     }, 550);
   }
