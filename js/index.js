@@ -133,7 +133,7 @@ function transitionFunction() {
       $("#changing-content").load(pages[pageHit-1]);
       setTimeout(function(){
         slideInLeft("#changing-content");
-      }, 50);
+      }, 200);
       transitionEnd();
     }, 550);
   }
@@ -164,7 +164,7 @@ function transitionFunction() {
       $("#changing-content").load(pages[pageHit-1]);
       setTimeout(function(){
         slideInRight("#changing-content");
-      }, 50);
+      }, 200);
       transitionEnd();
     }, 550);
   }
