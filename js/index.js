@@ -131,7 +131,9 @@ function transitionFunction() {
       //Sliding in functions
       $("#changing-content").css("left","-100vw");
       $("#changing-content").load(pages[pageHit-1]);
-      slideInLeft("#changing-content");
+      setTimeout(function(){
+        slideInLeft("#changing-content");
+      }, 50);
       transitionEnd();
     }, 550);
   }
@@ -160,7 +162,9 @@ function transitionFunction() {
       $("#changing-content").css("left","100vw");
       $("#changing-content").show();
       $("#changing-content").load(pages[pageHit-1]);
-      slideInRight("#changing-content");
+      setTimeout(function(){
+        slideInLeft("#changing-content");
+      }, 50);
       transitionEnd();
     }, 550);
   }
