@@ -163,7 +163,7 @@ function transitionFunction() {
       $("#changing-content").show();
       $("#changing-content").load(pages[pageHit-1]);
       setTimeout(function(){
-        slideInLeft("#changing-content");
+        slideInRight("#changing-content");
       }, 50);
       transitionEnd();
     }, 550);
