@@ -1,9 +1,9 @@
-var pages = ['/content/home.html #home-changing-content',
-             '/content/events.html #events-changing-content',
-             '/content/team.html #team-changing-content',
-             '/content/about.html #about-changing-content',
-             '/content/contact.html #contact-changing-content',
-             '/content/sponsor.html #sponsor-changing-content'];
+var pages = ['/content/home.txt',
+             '/content/events.txt',
+             '/content/team.txt',
+             '/content/about.txt',
+             '/content/contact.txt',
+             '/content/sponsor.txt'];
 
 var currentPage = 1;
 var paheHit = 1;

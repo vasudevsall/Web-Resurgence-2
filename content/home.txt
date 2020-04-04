@@ -1,0 +1,16 @@
+      <div class="home-logo">
+        <div class="landingLogo">
+				      <div class="outer-circle">
+					     <div class="inner-circle">
+						      <img src="/images/logo.png", class="innerLogo" />
+					     </div>
+					     <span></span>
+					     <span></span>
+					     <span></span>
+					     <span></span>
+				    </div>
+			  </div>
+      </div>
+      <div class="resurgence-name">
+        Resurgence 2020
+      </div>
