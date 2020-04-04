@@ -1,9 +1,14 @@
-var pages = ['/content/home.txt',
-             '/content/events.txt',
-             '/content/team.txt',
-             '/content/about.txt',
-             '/content/contact.txt',
-             '/content/sponsor.txt'];
+var pages = ['/content/home.html #home-changing-content',
+             '/content/events.html #events-changing-content',
+             '/content/team.html #team-changing-content',
+             '/content/about.html #about-changing-content',
+             '/content/contact.html #contact-changing-content',
+             '/content/sponsor.html #sponsor-changing-content'];
+var navItems = ['homeNav', 'eventsNav', 'teamNav',
+                'aboutNav', 'contactNav', 'sponsorNav'];
+
+var thisBody = $("#theBody");
+var changingContent = $("#changing-content");
 
 var currentPage = 1;
 var paheHit = 1;
@@ -45,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 });
 
 function afterLoad() {
-  $("#changing-content").load(pages[currentPage-1]);
+  changingContent.load(pages[currentPage-1]);
   $('#main-content').removeClass('invisible').hide();
   $('#loader').fadeOut(1000, function(){
     $('#main-content').fadeIn(1000);
@@ -108,29 +113,76 @@ function sponsor() {
 
 function transitionFunction() {
   console.log(pageHit);
+  //Changing the nav items based on page pageHit
+  var Nav = document.getElementById("mainListDiv");
+  if(pageHit != currentPage){
+    $("#mainListDiv").fadeOut(100);
+    console.log("PageHit = ",pageHit);
+
+    setTimeout(function(){
+      if(pageHit == 1)
+      {
+        var i=0;
+        for(i=0; i<navItems.length; i++){
+          document.getElementById(navItems[i]).classList.add('navitems');
+          document.getElementById(navItems[i]).classList.remove("eventsNav");
+          document.getElementById(navItems[i]).classList.remove("navitems1");
+        }
+      }
+
+      else if(pageHit==2)
+      {
+        var i=0;
+        for(i=0; i<navItems.length; i++){
+          document.getElementById(navItems[i]).classList.remove('navitems');
+          document.getElementById(navItems[i]).classList.add("eventsNav");
+          document.getElementById(navItems[i]).classList.remove("navitems1");
+        }
+      }
+
+      else
+      {
+        var i=0;
+        for(i=0; i<navItems.length; i++){
+          document.getElementById(navItems[i]).classList.remove('navitems');
+          document.getElementById(navItems[i]).classList.remove("eventsNav");
+          document.getElementById(navItems[i]).classList.add("navitems1");
+        }
+      }
+
+      $("#mainListDiv").fadeIn(100);
+    }, 200);
+  }
+
+  //Underlining the Current Page
+  $("#"+navItems[currentPage-1]).removeClass("underline-text");
+  $("#"+navItems[pageHit-1]).addClass("underline-text");
+
   if(pageHit < currentPage){
     slideOutRight("#changing-content");
     setTimeout(function(){
+
       //Change Body Background based on the page
       if (pageHit == 2) {
-        $("#theBody").removeClass("cardBody");
-        $("#theBody").removeClass("homeBody");
-        $("#theBody").addClass("eventBody");
+        thisBody.removeClass("cardBody");
+        thisBody.removeClass("homeBody");
+        thisBody.addClass("eventBody");
       }
       else if(pageHit == 4) {
         console.log("Hi");
-        $("#theBody").removeClass("eventBody");
-        $("#theBody").removeClass("homeBody");
-        $("#theBody").addClass("cardBody");
+        thisBody.removeClass("eventBody");
+        thisBody.removeClass("homeBody");
+        thisBody.addClass("cardBody");
       }
       else {
-        $("#theBody").removeClass("eventBody");
-        $("#theBody").removeClass("cardBody");
-        $("#theBody").addClass("homeBody");
+        thisBody.removeClass("eventBody");
+        thisBody.removeClass("cardBody");
+        thisBody.addClass("homeBody");
       }
+
       //Sliding in functions
-      $("#changing-content").css("left","-100vw");
-      $("#changing-content").load(pages[pageHit-1], function(){
+      changingContent.css("left","-100vw");
+      changingContent.load(pages[pageHit-1], function(){
         slideInLeft("#changing-content");
       });
       transitionEnd();
@@ -139,28 +191,30 @@ function transitionFunction() {
   else if (pageHit > currentPage) {
     slideOutLeft("#changing-content");
     setTimeout(function(){
+
       //Change Body Background based on the page
       if (pageHit == 2) {
-        $("#theBody").removeClass("cardBody");
-        $("#theBody").removeClass("homeBody");
-        $("#theBody").addClass("eventBody");
+        thisBody.removeClass("cardBody");
+        thisBody.removeClass("homeBody");
+        thisBody.addClass("eventBody");
       }
       else if(pageHit == 4) {
         console.log("Hi");
-        $("#theBody").removeClass("eventBody");
-        $("#theBody").removeClass("homeBody");
-        $("#theBody").addClass("cardBody");
+        thisBody.removeClass("eventBody");
+        thisBody.removeClass("homeBody");
+        thisBody.addClass("cardBody");
         console.log(document.getElementById("theBody"));
       }
       else {
-        $("#theBody").removeClass("eventBody");
-        $("#theBody").removeClass("cardBody");
-        $("#theBody").addClass("homeBody");
+        thisBody.removeClass("eventBody");
+        thisBody.removeClass("cardBody");
+        thisBody.addClass("homeBody");
       }
       //Sliding in functions
-      $("#changing-content").css("left","100vw");
-      $("#changing-content").show();
-      $("#changing-content").load(pages[pageHit-1], function(){
+
+      changingContent.css("left","100vw");
+      changingContent.show();
+      changingContent.load(pages[pageHit-1], function(){
         slideInRight("#changing-content");
       });
       transitionEnd();

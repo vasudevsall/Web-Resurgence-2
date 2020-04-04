@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Resurgence 2020</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+  </head>
+  <body class="homeBody" id="theBody">
+    <nav class="nav1">
+      <div class="container1">
+          <div class="logo"><img src="/images/logo.png" class="navlogo"></div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                <li class="navitems" onclick="home()" id="homeNav">Home</li>
+                <li class="navitems" onclick="events()" id="eventsNav">Events</li>
+                <li class="navitems" onclick="team()" id="teamNav">Team</li>
+                <li class="navitems" onclick="about()" id="aboutNav">About Us</li>
+                <li class="navitems" onclick="contact()" id="contactNav">Contact Us</li>
+                <li class="navitems" onclick="sponsor()" id="sponsorNav">Sponsors</li>
+              </ul>
+          </div>
+          <div class="navTrigger">
+              <i></i><i></i><i></i>
+          </div>
+      </div>
+    </nav>
+    <!--This div loads all content using jquery and ajax-->
+    <div class="center-content" id="about-changing-content">
+      <div class="resurgence-name">
+        About Us
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/home.js"></script>
+  </body>
+</html>

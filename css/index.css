@@ -13,6 +13,10 @@
 
 /* class starts */
 
+.underline-text {
+  text-decoration: underline;
+}
+
 .invisible {
   display: none;
 }

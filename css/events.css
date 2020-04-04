@@ -1,6 +1,7 @@
 .eventBody {
   overflow-x: hidden;
   background-image: linear-gradient(120deg, rgba(224, 195, 252, 0.75) 0%, rgba(142, 197, 252, 0.75) 100%);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -8,6 +9,76 @@
   filter: url("#goo");
 }
 
+.eventsNav {
+  padding: 1vw 1.2vw;
+	font-size: 1.15rem;
+	color: #8c00ff!important;
+	font-weight: bold;
+	text-shadow: 1px 1px #8c00ffaa;
+  text-align: center;
+	font-family: 'Amatic SC';
+}
+.eventsNav:hover{
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Meda Query stars*/
+@media only screen and (max-width: 600px) {
+  .eventBody {
+      background-image: linear-gradient(120deg, rgba(224, 195, 252, 0.75) 0%, rgba(142, 197, 252, 0.75) 100%);
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      filter: url("#goo");
+      overflow-y: auto;
+  }
+
+  .events-main-div {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+/* Media query ends*/
+
+/*Maiin CSS starts*/
+
+.events-main-div {
+  text-align: center;
+}
+
+.events-main-image {
+  height: auto;
+  max-width: 250px;
+}
+.events-main-image:hover{
+  cursor: pointer;
+}
+
+.events-main-text {
+	font-family: 'Amatic SC';
+	font-weight: bold;
+	text-shadow: 1px 1px #8c00ffaa;
+	color: #8c00ff!important;
+	font-size: 2rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.events-main-text:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+	cursor: pointer;
+}
+
+/* Main CSS ends*/
+
+/*Background CSS*/
 .particleBack {
   height: 100vh;
   width: 100vw;
