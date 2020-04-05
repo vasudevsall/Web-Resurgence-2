@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function(event){
 });
 
 function afterLoad() {
-  changingContent.load(pages[currentPage-1]);
   $('#main-content').removeClass('invisible').hide();
   $('#loader').fadeOut(1000, function(){
     $('#main-content').fadeIn(1000);
@@ -122,6 +121,9 @@ function transitionFunction() {
     setTimeout(function(){
       if(pageHit == 1)
       {
+        //Changing the logo based on page
+        document.getElementById('nav-bar-logo').setAttribute('src','/images/logo-2.png');
+
         var i=0;
         for(i=0; i<navItems.length; i++){
           document.getElementById(navItems[i]).classList.add('navitems');
@@ -132,6 +134,9 @@ function transitionFunction() {
 
       else if(pageHit==2)
       {
+        //Changing the logo based on page
+        document.getElementById('nav-bar-logo').setAttribute('src','/images/logo.png');
+
         var i=0;
         for(i=0; i<navItems.length; i++){
           document.getElementById(navItems[i]).classList.remove('navitems');
@@ -142,6 +147,9 @@ function transitionFunction() {
 
       else
       {
+        //Changing the logo based on page
+        document.getElementById('nav-bar-logo').setAttribute('src','/images/logo.png');
+
         var i=0;
         for(i=0; i<navItems.length; i++){
           document.getElementById(navItems[i]).classList.remove('navitems');

@@ -26,8 +26,23 @@
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+/* Id*/
+#literature-image {
+  background-color: #8D4E85;
+}
+
+#changing-events {
+  padding-top: 100px;
+  height: 100%;
+}
+
+#changing-events-intra {
+  height: 100%;
+  width: 100%;
+}
+
 /* Meda Query stars*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   .eventBody {
       background-image: linear-gradient(120deg, rgba(224, 195, 252, 0.75) 0%, rgba(142, 197, 252, 0.75) 100%);
       background-attachment: fixed;
@@ -38,10 +53,17 @@
       overflow-y: auto;
   }
 
+  #changing-events {
+    padding-top: 0px;
+    height: 100%;
+  }
+
   .events-main-div {
+    /* position: relative; */
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    /* top: 0px; */
   }
 }
 /* Media query ends*/
@@ -49,7 +71,9 @@
 /*Maiin CSS starts*/
 
 .events-main-div {
+  /* position: relative; */
   text-align: center;
+  /* top: 120px; */
 }
 
 .events-main-image {
@@ -74,6 +98,28 @@
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 	cursor: pointer;
+}
+
+.div-intra {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  top: 40px;
+}
+
+.theSvg {
+  width: 0px;
+  height: 0px;
+}
+
+.image-intra {
+  /* margin: 0px 50px 0px 50px; */
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+.image-intra:hover {
+  cursor: pointer;
 }
 
 /* Main CSS ends*/

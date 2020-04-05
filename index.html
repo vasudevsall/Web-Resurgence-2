@@ -22,7 +22,7 @@
     <div class="invisible" id="main-content">
       <nav class="nav1">
         <div class="container1">
-            <div class="logo"><img src="images/logo.png" class="navlogo"></div>
+            <div onclick="home()" class="logo"><img src="images/logo-2.png" class="navlogo" id="nav-bar-logo"></div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                   <li class="navitems underline-text" onclick="home()" id="homeNav">Home</li>
@@ -40,12 +40,28 @@
       </nav>
     <!--This div loads all content using jquery and ajax-->
     <div class="center-content" id="changing-content">
+      <!--initially home page content is placed-->
+      <div class="home-logo">
+        <div class="landingLogo">
+				      <div class="outer-circle">
+					     <div class="inner-circle">
+						      <img src="/images/logo.png", class="innerLogo" />
+					     </div>
+					     <span></span>
+					     <span></span>
+					     <span></span>
+					     <span></span>
+				    </div>
+			  </div>
+      </div>
+      <div class="resurgence-name">
+        Resurgence 2020
+      </div>
+
     </div>
   </div>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="/js/events.js"></script>
-    <script type="text/javascript" src="/js/about.js"></script>
-    <script type="text/javascript" src="/js/home.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
   </body>
 </html>

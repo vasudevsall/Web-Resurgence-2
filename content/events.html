@@ -35,7 +35,7 @@
     </nav>
     <!--This div loads all content using jquery and ajax-->
     <div class="center-content" id="events-changing-content">
-      <svg version='1.1' xmlns='http://www.w3.org/2000/svg'>
+      <svg class="theSvg" version='1.1' xmlns='http://www.w3.org/2000/svg'>
   		<defs>
     		<filter id='goo'>
       		<fegaussianblur in='SourceGraphic' result='blur' stddeviation='10'></fegaussianblur>
@@ -45,15 +45,15 @@
   		</defs>
 			</svg>
 
-      <div id="chaning-events" class="container-fluid">
+      <div id="changing-events" class="container-fluid">
         <div class="row">
         <div id="inter-univ-div" class="col-md-6 events-main-div">
           <img src="/images/testImage.png" class="rounded-circle events-main-image"/>
           <p class="events-main-text">Inter-University</p>
         </div>
-        <div id="inter-univ-div" class="col-md-6 events-main-div">
-          <img src="/images/testImage.png" class="rounded-circle events-main-image"/>
-          <p class="events-main-text">Intra-University</p>
+        <div id="intra-univ-div" class="col-md-6 events-main-div">
+          <img src="/images/testImage.png" onclick="intraUnivClick()" class="rounded-circle events-main-image"/>
+          <p class="events-main-text" onclick="intraUnivClick()">Intra-University</p>
         </div>
       </div>
       </div>
@@ -62,6 +62,5 @@
     <script type="text/javascript" src="/js/events.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/js/home.js"></script>
   </body>
 </html>
