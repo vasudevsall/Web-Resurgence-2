@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/events.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Resurgence 2020</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+  </head>
+  <body class="eventBody" id="theBody">
+    <div class="blur invisible" id="blurs">
+    </div>
+    <div class="text-box invisible" id="textbox">
+      <p id="eventHead"></p>
+      <hr class="fadedLine"/>
+      <p id="eventBody"></p>
+    </div>
+    <nav class="nav1">
+      <div class="container1">
+          <div class="logo"><img src="/images/logo.png" class="navlogo"></div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                <li class="eventsNav" onclick="home()" id="homeNav">Home</li>
+                <li class="eventsNav" onclick="events()" id="eventsNav">Events</li>
+                <li class="eventsNav" onclick="team()" id="teamNav">Team</li>
+                <li class="eventsNav" onclick="about()" id="aboutNav">About Us</li>
+                <li class="eventsNav" onclick="contact()" id="contactNav">Contact Us</li>
+                <li class="eventsNav" onclick="sponsor()" id="sponsorNav">Sponsors</li>
+              </ul>
+          </div>
+          <div class="navTrigger">
+              <i></i><i></i><i></i>
+          </div>
+      </div>
+    </nav>
+    <!--This div loads all content using jquery and ajax-->
+    <div class="center-content" id="events-changing-content-intra">
+      <svg class="theSvg" version='1.1' xmlns='http://www.w3.org/2000/svg'>
+  		<defs>
+    		<filter id='goo'>
+      		<fegaussianblur in='SourceGraphic' result='blur' stddeviation='10'></fegaussianblur>
+      		<fecolormatrix in='blur' mode='matrix' result='goo' values='1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7'></fecolormatrix>
+      		<feblend in2='goo' in='SourceGraphic'></feblend>
+    		</filter>
+  		</defs>
+			</svg>
+
+      <div id="changing-events-intra-2">
+      <div class="item-cover">
+        <img src="/images/testImage.png" class="eventClickImg" id="eventImg"/>
+        <hr class="style13">
+  			<div class="sub-content-1 subcontents" id="subcontent1">
+  				<p id="subcontent1-p" class="eventBubble">
+  				</p>
+  			</div>
+  			<div class="sub-content-2 subcontents" id="subcontent2">
+  				<p id="subcontent2-p" class="eventBubble">
+  				</p>
+  			</div>
+  			<div class="sub-content-3 subcontents" id="subcontent3">
+  				<p id="subcontent3-p" class="eventBubble">
+  				</p>
+  			</div>
+  			<div class="sub-content-4 subcontents" id="subcontent4">
+  				<p id="subcontent4-p" class="eventBubble">
+  				</p>
+  			</div>
+  			<div class="sub-content-5 subcontents" id="subcontent5">
+  				<p id="subcontent5-p" class="eventBubble">
+  				</p>
+  			</div>
+  			<div class="sub-content-6 subcontents" id="subcontent6">
+  				<p id="subcontent6-p" class="eventBubble">
+  				</p>
+  			</div>
+      </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/events.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+  </body>
+</html>

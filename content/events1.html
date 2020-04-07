@@ -45,40 +45,41 @@
   		</defs>
 			</svg>
 
-      <div id="changing-events-intra" onclick="backEvents()">
+      <div id="changing-events-intra">
+      <div class="full-span" onclick="backEvents()"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="div-intra col-lg-3" id="dance-div">
-            <img class="image-intra" id="dance-image" src="/images/danceImg.png" onmouseover="hover('dance-image', 'danceImage.gif')" onmouseout="unHover('dance-image', 'danceImg.png')">
-            <p class="events-main-text" onmouseover="hover('dance-image', 'danceImage.gif')" onmouseout="unHover('dance-image', 'danceImg.png')">Dance</p>
+          <div class="div-intra col-lg-3" id="dance-div" onclick="backEvents()">
+            <img class="image-intra" id="dance-image" onclick="dance()" src="/images/danceImg.png" onmouseover="hover('dance-image', 'danceImage.gif')" onmouseout="unHover('dance-image', 'danceImg.png')">
+            <p class="events-main-text" onclick="dance()" onmouseover="hover('dance-image', 'danceImage.gif')" onmouseout="unHover('dance-image', 'danceImg.png')">Dance</p>
           </div>
-          <div class="div-intra col-lg-3" id="theatre-div">
-            <img class="image-intra" id="theatre-image" src="/images/theatreImg.png" onmouseover="hover('theatre-image', 'theatreImage.gif')" onmouseout="unHover('theatre-image', 'theatreImg.png')">
-            <p class="events-main-text" onmouseover="hover('theatre-image', 'theatreImage.gif')" onmouseout="unHover('theatre-image', 'theatreImg.png')">Theatre</p>
+          <div class="div-intra col-lg-3" id="theatre-div" onclick="backEvents()">
+            <img class="image-intra" id="theatre-image" onclick="theatre()" src="/images/theatreImg.png" onmouseover="hover('theatre-image', 'theatreImage.gif')" onmouseout="unHover('theatre-image', 'theatreImg.png')">
+            <p class="events-main-text" onclick="theatre()" onmouseover="hover('theatre-image', 'theatreImage.gif')" onmouseout="unHover('theatre-image', 'theatreImg.png')">Theatre</p>
           </div>
-          <div class="div-intra col-lg-3" id="music-div">
-            <img class="image-intra" id="music-image" src="/images/musicImg.png" onmouseover="hover('music-image', 'musicImage.gif')" onmouseout="unHover('music-image', 'musicImg.png')">
-            <p class="events-main-text" onmouseover="hover('music-image', 'musicImage.gif')" onmouseout="unHover('music-image', 'musicImg.png')">Music</p>
+          <div class="div-intra col-lg-3" id="music-div" onclick="backEvents()">
+            <img class="image-intra" id="music-image" onclick="music()" src="/images/musicImg.png" onmouseover="hover('music-image', 'musicImage.gif')" onmouseout="unHover('music-image', 'musicImg.png')">
+            <p class="events-main-text" onclick="music()" onmouseover="hover('music-image', 'musicImage.gif')" onmouseout="unHover('music-image', 'musicImg.png')">Music</p>
           </div>
-          <div class="div-intra col-lg-3" id="photo-div">
-            <img class="image-intra" id="photo-image" src="/images/photoImg.png" onmouseover="hover('photo-image', 'photoImage.gif')" onmouseout="unHover('photo-image', 'photoImg.png')">
-            <p class="events-main-text" onmouseover="hover('photo-image', 'photoImage.gif')" onmouseout="unHover('photo-image', 'photoImg.png')">Photo/Video graphy</p>
+          <div class="div-intra col-lg-3" id="photo-div" onclick="backEvents()">
+            <img class="image-intra" id="photo-image" onclick="photo()" src="/images/photoImg.png" onmouseover="hover('photo-image', 'photoImage.gif')" onmouseout="unHover('photo-image', 'photoImg.png')">
+            <p class="events-main-text" onclick="photo()" onmouseover="hover('photo-image', 'photoImage.gif')" onmouseout="unHover('photo-image', 'photoImg.png')">Photo/Video graphy</p>
           </div>
         </div>
       </div>
         <div class="row">
-          <div class="col-md-2"></div>
-          <div class="div-intra col-lg-2" id="art-div">
-            <img class="image-intra" id="art-image" src="/images/artImg.png" onmouseover="hover('art-image', 'artImage.gif')" onmouseout="unHover('art-image', 'artImg.png')">
-            <p class="events-main-text" onmouseover="hover('art-image', 'artImage.gif')" onmouseout="unHover('art-image', 'artImg.png')">Fine Arts</p>
+          <div class="col-md-2" onclick="backEvents()"></div>
+          <div class="div-intra col-lg-2" id="art-div" onclick="backEvents()">
+            <img class="image-intra" id="art-image" onclick="art()" src="/images/artImg.png" onmouseover="hover('art-image', 'artImage.gif')" onmouseout="unHover('art-image', 'artImg.png')">
+            <p class="events-main-text" onclick="art()" onmouseover="hover('art-image', 'artImage.gif')" onmouseout="unHover('art-image', 'artImg.png')">Fine Arts</p>
           </div>
-          <div class="div-intra col-lg-4" id="literature-div">
-            <img class="image-intra" id="literature-image" src="/images/literatureImg.png" onmouseover="hover('literature-image', 'literatureImage.gif')" onmouseout="unHover('literature-image', 'literatureImg.png')">
-            <p class="events-main-text" onmouseover="hover('literature-image', 'literatureImage.gif')" onmouseout="unHover('literature-image', 'literatureImg.png')">Literature</p>
+          <div class="div-intra col-lg-4" id="literature-div" onclick="backEvents()">
+            <img class="image-intra" id="literature-image" onclick="literature()" src="/images/literatureImg.png" onmouseover="hover('literature-image', 'literatureImage.gif')" onmouseout="unHover('literature-image', 'literatureImg.png')">
+            <p class="events-main-text" onclick="literature()" onmouseover="hover('literature-image', 'literatureImage.gif')" onmouseout="unHover('literature-image', 'literatureImg.png')">Literature</p>
           </div>
-          <div class="div-intra col-lg-2" id="special-div">
-            <img class="image-intra" id="special-image" src="/images/specialImg.png" onmouseover="hover('special-image', 'specialImage.gif')" onmouseout="unHover('special-image', 'specialImg.png')">
-            <p class="events-main-text" onmouseover="hover('special-image', 'specialImage.gif')" onmouseout="unHover('special-image', 'specialImg.png')">Specials</p>
+          <div class="div-intra col-lg-2" id="special-div" onclick="backEvents()">
+            <img class="image-intra" id="special-image" onclick="special()" src="/images/specialImg.png" onmouseover="hover('special-image', 'specialImage.gif')" onmouseout="unHover('special-image', 'specialImg.png')">
+            <p class="events-main-text" onclick="special()" onmouseover="hover('special-image', 'specialImage.gif')" onmouseout="unHover('special-image', 'specialImg.png')">Specials</p>
           </div>
         </div>
       </div>

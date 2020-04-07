@@ -1,5 +1,4 @@
-
-/* id starts */
+/* class starts */
 
 .center-content {
   position: fixed;
@@ -8,10 +7,6 @@
   width: 100vw;
   z-index: 1;
 }
-
-/* id Ends */
-
-/* class starts */
 
 .underline-text {
   text-decoration: underline;
@@ -27,6 +22,7 @@
 }
 
 .loadingVideoDiv {
+  overflow: hidden;
   position: absolute;
   display: flex;
   height: 100vh;
@@ -47,7 +43,7 @@
     position: fixed;
     line-height: 65px;
     text-align: center;
-    z-index: 1000;
+    z-index: 99;
 }
 
 .navlogo{
@@ -85,7 +81,7 @@
 	color: #fff;
   text-align: center;
 	font-family: 'Barlow Condensed';
-  z-index: 1000;
+  z-index: 99;
   /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate; */
@@ -104,7 +100,7 @@
 	color: #fff;
   text-align: center;
 	font-family: 'Amatic SC';
-  z-index: 1000;
+  z-index: 99;
   /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate; */
@@ -125,7 +121,7 @@
 	/* text-shadow: 1px 1px #8c00ffaa; */
   text-align: center;
 	font-family: 'Amatic SC';
-  z-index: 1000;
+  z-index: 99;
   /* -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate; */
