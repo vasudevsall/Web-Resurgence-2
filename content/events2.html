@@ -15,13 +15,21 @@
     <link rel="icon" type="image/x-icon" href="/images/icon.png">
   </head>
   <body class="eventBody" id="theBody">
-    <div class="blur invisible" id="blurs">
+    <!-- <div class="blur invisible" id="blurs">
     </div>
     <div class="text-box invisible" id="textbox">
       <p id="eventHead"></p>
       <hr class="fadedLine"/>
       <p id="eventBody"></p>
+    </div> -->
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+        </div>
+      </div>
     </div>
+
     <nav class="nav1">
       <div class="container1">
           <div class="logo"><img src="/images/logo.png" class="navlogo"></div>
@@ -56,31 +64,32 @@
       <div class="item-cover">
         <img src="/images/testImage.png" class="eventClickImg" id="eventImg"/>
         <hr class="style13">
-  			<div onclick="bubbleClick('1')" class="sub-content-1 subcontents" id="subcontent1">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-1 subcontents" id="subcontent1">
   				<p id="subcontent1-p" class="eventBubble">
   				</p>
   			</div>
-  			<div onclick="bubbleClick('2')" class="sub-content-2 subcontents" id="subcontent2">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-2 subcontents" id="subcontent2">
   				<p id="subcontent2-p" class="eventBubble">
   				</p>
   			</div>
-  			<div onclick="bubbleClick('3')" class="sub-content-3 subcontents" id="subcontent3">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-3 subcontents" id="subcontent3">
   				<p id="subcontent3-p" class="eventBubble">
   				</p>
   			</div>
-  			<div onclick="bubbleClick('4')" class="sub-content-4 subcontents" id="subcontent4">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-4 subcontents" id="subcontent4">
   				<p id="subcontent4-p" class="eventBubble">
   				</p>
   			</div>
-  			<div onclick="bubbleClick('5')" class="sub-content-5 subcontents" id="subcontent5">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-5 subcontents" id="subcontent5">
   				<p id="subcontent5-p" class="eventBubble">
   				</p>
   			</div>
-  			<div onclick="bubbleClick('6')" class="sub-content-6 subcontents" id="subcontent6">
+  			<div data-toggle="modal" data-target="#myModal" class="sub-content-6 subcontents" id="subcontent6">
   				<p id="subcontent6-p" class="eventBubble">
   				</p>
   			</div>
       </div>
+
       </div>
     </div>
     <script type="text/javascript" src="/js/events.js"></script>

@@ -22,10 +22,10 @@ and 1 means transition is allowed.*/
 
 $(window).scroll(function() {
     if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
+        $('.nav1').addClass('affix');
         console.log("OK");
     } else {
-        $('.nav').removeClass('affix');
+        $('.nav1').removeClass('affix');
     }
 });
 $('.navTrigger').click(function () {
