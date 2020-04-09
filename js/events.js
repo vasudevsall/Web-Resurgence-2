@@ -104,6 +104,11 @@ function eventsTransition(imageId) {
 // var eventBubble5 = document.getElementById("subcontent5-p");
 // var eventBubble6 = document.getElementById("subcontent6-p");
 
+function scrollToModal() {
+  // document.getElementById("eventImg").scrollIntoView();
+  window.scrollTo(0,0);
+}
+
 var textbox = document.getElementById("textbox");
 var blurDiv= document.getElementById('blurs');
 
